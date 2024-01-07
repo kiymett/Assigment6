@@ -78,24 +78,3 @@ p{
     text-indent: 1.25rem;
 }
 
-.details{
-    cursor: pointer;
-    & summary{
-        .bi-arrow-up-circle{
-            display: none;
-        }
-    }
-}
-
-
-.details[open]{
-    & summary{
-        .bi-arrow-down-circle{
-            display: none;
-        }
-        .bi-arrow-up-circle{
-            display: block;
-        }
-
-    }
-}

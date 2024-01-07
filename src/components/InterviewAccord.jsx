@@ -14,10 +14,13 @@ const InterviewAccord = () => {
         <div key={id} className="card">
           <div className='ques'>
              <h5>{question}</h5>
-             <button onClick={()=>setSeciliId(id)}>{seciliId===id ? arrowup : arrowdown}</button>
+             <button onClick={()=>setSeciliId(id)} onDoubleClick = {()=> setSeciliId("")}>
+              {seciliId === id ? arrowup : arrowdown}
+
+              </button>
           </div>
           <div className='ques-answer'>
-            <p>{answer}</p>
+            <p>{seciliId === id && answer}</p>
           </div>
 
         </div>
